@@ -1,0 +1,12 @@
+BasedOnStyle: WebKit
+ColumnLimit: 100
+IndentWidth: 4
+AllowShortFunctionsOnASingleLine: None
+AllowShortEnumsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortLambdasOnASingleLine: None
+BreakBeforeBraces: Attach
+NamespaceIndentation: None
+PointerAlignment: Right
+SortIncludes: Never
+
