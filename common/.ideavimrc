@@ -1,0 +1,66 @@
+filetype plugin on
+filetype indent on
+set signcolumn=yes
+set encoding=utf-8
+set number
+set relativenumber
+set showmatch
+set ai 
+set si 
+set wrap
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+set inccommand=nosplit
+set nobackup
+set nowb
+set noswapfile
+let c_no_curly_error = 1
+set exrc
+set secure
+
+set splitright
+set splitbelow
+
+set incsearch
+set ignorecase
+set smartcase
+set gdefault
+
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+nnoremap <silent> * *zz
+nnoremap <silent> # #zz
+nnoremap <silent> g* g*zz
+
+nnoremap ? ?\v
+nnoremap / /\v
+cnoremap %s/ %sm/
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+map <C-g> <C-w><C-w>
+
+vnoremap <C-h> :nohlsearch<cr>
+nnoremap <C-h> :nohlsearch<cr>
+
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <leader>, :set invlist<cr>
+nmap <leader>w :w<CR>
+
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gb :action JumpToLastChange<CR>
+
+nnoremap <space>f :action ReformatCode<CR>
+nnoremap gcc :action CommentByLineComment<CR>
+vnoremap gcc :action CommentByLineComment<CR>
+
+nnoremap u :action $Undo<CR>
+
